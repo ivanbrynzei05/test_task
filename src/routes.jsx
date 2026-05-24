@@ -1,8 +1,9 @@
-import { AreaChartOutlined, HomeOutlined, LineChartOutlined, NumberOutlined } from "@ant-design/icons";
+import { AreaChartOutlined, HomeOutlined, LineChartOutlined, NumberOutlined, UserOutlined } from "@ant-design/icons";
 import Home from "./pages/Home.jsx";
 import Coins from "./pages/Coins.jsx";
 import CoinsPaged from "./pages/CoinsPaged.jsx";
 import CoinChartPage from "./pages/CoinChartPage.jsx";
+import Wizard from "./pages/Wizard.jsx";
 
 export const routes = [
   {
@@ -29,4 +30,10 @@ export const routes = [
     icon: <LineChartOutlined />,
     element: <CoinChartPage />
   }, // цю я всунув одразу вже
+  {
+    path: "/wizard",
+    label: "Form",
+    icon: <UserOutlined />,
+    element: <Wizard />
+  }, // тут також кома, про всяк випадок
 ];
