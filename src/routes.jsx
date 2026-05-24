@@ -1,7 +1,8 @@
-import { AreaChartOutlined, HomeOutlined, NumberOutlined } from "@ant-design/icons";
+import { AreaChartOutlined, HomeOutlined, LineChartOutlined, NumberOutlined } from "@ant-design/icons";
 import Home from "./pages/Home.jsx";
 import Coins from "./pages/Coins.jsx";
 import CoinsPaged from "./pages/CoinsPaged.jsx";
+import CoinChartPage from "./pages/CoinChartPage.jsx";
 
 export const routes = [
   {
@@ -21,5 +22,11 @@ export const routes = [
     label: "Pagination",
     icon: <NumberOutlined />,
     element: <CoinsPaged />
-  }
+  }, // смішно, але тут фікс зайняв хвили 10 (ну та, також кома)
+  {
+    path: "/chart",
+    label: "Graph",
+    icon: <LineChartOutlined />,
+    element: <CoinChartPage />
+  }, // цю я всунув одразу вже
 ];

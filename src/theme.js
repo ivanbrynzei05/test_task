@@ -1,6 +1,6 @@
 export const theme = {
     token: {
-        colorPrimary: "#e53935",
+        colorPrimary: "#6495ED", //це я замінив в завданні 3, бо забув за нього в 1 коміті, вибачте:(
     },
     components: {
       Button: {
