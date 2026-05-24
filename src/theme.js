@@ -3,10 +3,17 @@ export const theme = {
         colorPrimary: "#e53935",
     },
     components: {
-        Button: {
-            borderRadius: 0,
-            borderRadiusLG: 0,
-            borderRadiusSM: 0,
-        },
+      Button: {
+        borderRadius: 8,
+        borderRadiusLG: 8,
+        borderRadiusSM: 8,
+      },
+      Table: {
+        headerBg: "#1f2937",
+        headerColor: "#ffffff",
+        rowHoverBg: "#f3f4f6",
+        cellPaddingBlock: 14,
+        cellPaddingInline: 12,
+      }
     },
 };
