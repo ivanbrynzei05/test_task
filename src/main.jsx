@@ -6,7 +6,15 @@ import App from "./App.jsx";
 import { theme } from "./theme.js";
 import "./index.css";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 1000 * 60,          // тут набідойобив трохи, тому це лише для тестів, у наступному коміті видалю
+      refetchOnWindowFocus: false,
+      retry: 1,
+    },
+  },
+});
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
